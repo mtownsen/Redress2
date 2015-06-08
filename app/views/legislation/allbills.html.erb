@@ -1,0 +1,21 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Bill Id</th>
+    <th>Title</th>
+    <th>Chamber</th>
+
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @bills.each do |bill| %>
+
+      <tr>
+        <td><%= bill["bill_id"] %></td>
+        <td><%= bill["official_title"] %></td>
+        <td><%= bill["chamber"] %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
